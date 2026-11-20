@@ -1,0 +1,225 @@
+{
+  "gerado_em": "2026-11-20",
+  "nota": "Salarios saem do feed publico de vagas de cada empresa (Ashby posting-api, Greenhouse boards-api, Lever postings), que e o mesmo dado da pagina da vaga. Paginas Ashby sao renderizadas por JS, por isso a leitura foi pelo feed publico sem chave. Valores em moeda original.",
+  "itens": [
+    {
+      "empresa_ou_fonte": "Anthropic - Staff Forward Deployed Engineer (NYC / SF / Seattle)",
+      "dado_literal": "Annual Salary: $280,000 - $320,000 USD (a pagina diz que, em vagas de vendas, e a faixa OTE)",
+      "resumo_pt": "Staff FDE na Anthropic: US$ 280 mil a 320 mil por ano, faixa publicada.",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5449229008",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Nao remoto: EUA (NYC, SF, Seattle); hibrido, minimo 25% no escritorio"
+    },
+    {
+      "empresa_ou_fonte": "Anthropic - Forward Deployed Engineer (Londres)",
+      "dado_literal": "Annual Salary: 225,000 - 255,000 GBP",
+      "resumo_pt": "FDE da Anthropic em Londres: GBP 225 mil a 255 mil por ano.",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5423029008",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Fora dos EUA: Londres. Tambem ha vagas FDE em Munique e Paris (sem faixa no feed)"
+    },
+    {
+      "empresa_ou_fonte": "Anthropic - Manager, Forward Deployed Engineering (NYC)",
+      "dado_literal": "Annual Salary: $320,000 - $405,000 USD. Texto: 'You'll be a founding leader of a team that defines how enterprises adopt and scale AI.'",
+      "resumo_pt": "Gerente de FDE (lider fundador do time): US$ 320 mil a 405 mil. Mostra que a Anthropic esta montando o time do zero.",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5099753008",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "NYC; ha versoes em Londres, Paris e Munique"
+    },
+    {
+      "empresa_ou_fonte": "Anthropic - Technical Deployment Lead",
+      "dado_literal": "Annual Salary: $275,000 - $380,000 USD. Texto: 'You'll work alongside Forward Deployed Engineers who build the technical solution'",
+      "resumo_pt": "Funcao vizinha ao FDE (lidera entregas de agentes em empresas reguladas): US$ 275 mil a 380 mil.",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5017903008",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "EUA (Boston, NYC, SF...)"
+    },
+    {
+      "empresa_ou_fonte": "Databricks - AI Engineer, Forward Deployed Engineering (AI FDE)",
+      "dado_literal": "Local Pay Range $182,000—$250,208 USD. Texto: 'Open to remote locations.'",
+      "resumo_pt": "AI FDE da Databricks: US$ 182 mil a 250 mil de faixa base, aceita remoto (dentro dos EUA, pagina diz 'United States').",
+      "url": "https://www.databricks.com/company/careers/professional-services-operations/ai-engineer--forward-deployed-engineering-ai-fde-8546367002",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Remoto nos EUA. Pagina diz 'Willing to travel once every 4-8 weeks to see customers'"
+    },
+    {
+      "empresa_ou_fonte": "Databricks - Evergreen - FDE Brazil",
+      "dado_literal": "Titulo: 'Evergreen - FDE Brazil'; Location: Brazil; atualizada 2026-11-19. Texto: 'As a Sr. Forward Deployed Engineer (FDE) you will work with customers to build and productionize solutions to their data & AI challenges using the Databricks platform.'",
+      "resumo_pt": "A Databricks tem vaga aberta (evergreen) de FDE Senior no Brasil. Sem faixa salarial no feed.",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8638732002",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "BRASIL. Modalidade (remoto ou nao) nao confirmada no feed; sem faixa salarial"
+    },
+    {
+      "empresa_ou_fonte": "Databricks - volume de vagas FDE",
+      "dado_literal": "Feed oficial Greenhouse da Databricks: 115 vagas com 'Forward Deployed'/'FDE'/'Deployment Strategist' no titulo, entre 897 vagas abertas (contagem minha em 2026-11-20)",
+      "resumo_pt": "Cerca de 1 em cada 8 vagas abertas da Databricks e de FDE, em EUA, Reino Unido, Europa, Japao, Coreia, India, Brasil etc. Contagem propria no feed oficial, nao numero publicado pela empresa.",
+      "url": "https://www.databricks.com/company/careers/open-positions",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial (contagem propria)",
+      "remoto_ou_fora_eua": "Varios paises, incluindo Brasil e India remoto",
+      "url_feed": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs"
+    },
+    {
+      "empresa_ou_fonte": "Cohere - Forward Deployed Engineer, Inference (EUA)",
+      "dado_literal": "$240K – $415K • Offers Equity • Multiple Ranges (remote: true)",
+      "resumo_pt": "FDE de Inference na Cohere: US$ 240 mil a 415 mil mais equity, vaga marcada como remota.",
+      "url": "https://jobs.ashbyhq.com/cohere/8df498e9-aba8-487f-80ba-362b492bad09",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Remoto (EUA). Cohere tem 10 vagas FDE: Canada (CA$175K – CA$385K), Coreia (₩230M – ₩315M), Europa, Oriente Medio"
+    },
+    {
+      "empresa_ou_fonte": "Harvey - Forward Deployed Finance Engineer",
+      "dado_literal": "$254.6K – $350K • Offers Equity (remote: true; New York)",
+      "resumo_pt": "FDE de financas na Harvey (IA para advocacia/financas): US$ 254,6 mil a 350 mil mais equity.",
+      "url": "https://jobs.ashbyhq.com/harvey/43c6e218-ea85-4519-b2fe-dd188ff3234f",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Marcada remota no feed; base NYC. Ha tambem vaga em Londres"
+    },
+    {
+      "empresa_ou_fonte": "Ramp - Software Engineer, Forward Deployed, AI Solutions",
+      "dado_literal": "$189K – $330K • Offers Equity (remote: true; New York, NY (HQ))",
+      "resumo_pt": "FDE da Ramp: US$ 189 mil a 330 mil mais equity.",
+      "url": "https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Marcada remota no feed; sede NYC"
+    },
+    {
+      "empresa_ou_fonte": "Scale AI - Frontier Agents Engineer (Forward Deployed Engineering)",
+      "dado_literal": "180000-225000 USD (campo pay_input_ranges, Greenhouse). Outra vaga: Forward Deployed Software Engineer, Public Sector: 184000-292560 USD",
+      "resumo_pt": "Scale AI paga US$ 180 mil a 225 mil em FDE de agentes (SF) e ate US$ 292,5 mil em FDE de setor publico.",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4694861005",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "EUA (SF, varias bases militares); ha vaga FDE em Londres"
+    },
+    {
+      "empresa_ou_fonte": "Palantir - Forward Deployed Software Engineer",
+      "dado_literal": "The salary range for this position is estimated to be $135,000 - $200,000/year. Total compensation for this position may also include Restricted Stock units, sign-on bonus and other potential future incentives.",
+      "resumo_pt": "Palantir, criadora do modelo, publica US$ 135 mil a 200 mil de base (NYC, Chicago) mais acoes e bonus. Feed Lever: 50 vagas 'Forward Deployed Software Engineer' e 25 'Deployment Strategist' entre 308 abertas (contagem propria).",
+      "url": "https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Hibrido/presencial em EUA, Londres, Seul, Singapura, Lituania etc. Nenhuma vaga na America Latina no feed"
+    },
+    {
+      "empresa_ou_fonte": "Decagon - Agent Deployment Engineer - Spanish & Portuguese Speaking",
+      "dado_literal": "location: Brazil; workplaceType: Remote; publicada 2026-11-18. Requisito: 'Native or business-level fluency in both written and spoken English, Portuguese and Spanish is required.' Sem faixa no feed.",
+      "resumo_pt": "Decagon (IA de atendimento) abriu vaga REMOTA no Brasil para engenheiro de implantacao de agentes de IA, exigindo ingles, portugues e espanhol. Sem salario publicado.",
+      "url": "https://jobs.ashbyhq.com/decagon/5069134e-6af9-4274-9b81-c8e394bd7b6f",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "REMOTO, BRASIL (endereco Sao Paulo no feed). Sem salario publicado"
+    },
+    {
+      "empresa_ou_fonte": "Decagon - faixas de implantacao em outros paises",
+      "dado_literal": "Engineering Lead, Strategic Deployments (NYC/SF): $200K – $400K • Offers Equity. Agent Deployment Engineer (Londres): £110K – £150K • Offers Equity. (Australia): A$213K – A$266K",
+      "resumo_pt": "Mesma funcao com faixas publicadas em varias moedas, util como referencia do nivel mundial.",
+      "url": "https://jobs.ashbyhq.com/decagon/13056902-5ab6-4451-83a8-aa72e9f72532",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "Londres, Australia, EUA"
+    },
+    {
+      "empresa_ou_fonte": "Cognition (Devin) - Forward Deployed Engineer - LATAM (Sao Paulo)",
+      "dado_literal": "Titulo: 'Forward Deployed Engineer - LATAM'; local Sao Paulo (Brazil); workplaceType: OnSite; publicada 2026-05-20. Requisito: 'MUST have Fluency / Native proficiency in Portuguese'. Sem faixa no feed.",
+      "resumo_pt": "Cognition tem vaga de FDE para America Latina com base em Sao Paulo (presencial), exige portugues nativo. Ha tambem FDE LATAM na Cidade do Mexico (remoto). Sem salario publicado.",
+      "url": "https://jobs.ashbyhq.com/cognition/8139c589-494a-449a-b608-b11a689e7b2e",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "BRASIL, presencial em Sao Paulo (a de Cidade do Mexico: https://jobs.ashbyhq.com/cognition/09fa3cff-f57d-41dd-a56b-cb323c927ce6, remoto)"
+    },
+    {
+      "empresa_ou_fonte": "OpenAI - Forward Deployed Software Engineer (SF) (ja temos; reconfirmado no feed)",
+      "dado_literal": "$185K – $325K • Offers Equity (feed Ashby hoje; antes registrado como $185K – $300K); Manager, Forward Deployed Engineering NYC: $302K – $385K • Offers Equity",
+      "resumo_pt": "ATENCAO: a faixa do FDE SF da OpenAI esta hoje em US$ 185 mil a 325 mil no feed oficial (o registro anterior dizia ate 300 mil). Atualizar. Ha 56 vagas FDE/deployment no feed, incluindo Paris e Munique.",
+      "url": "https://jobs.ashbyhq.com/openai/00207abc-49b7-465c-a219-f7c1140f8047",
+      "conferido_em": "2026-11-20",
+      "tipo": "vaga oficial",
+      "remoto_ou_fora_eua": "SF; Paris e Munique (sem faixa no feed)"
+    },
+    {
+      "empresa_ou_fonte": "Salesforce - blog oficial (Agentforce)",
+      "dado_literal": "'Salesforce alone has committed to building a team of 1,000 FDEs.' e 'job postings for this role soared by more than 800% between January and September of 2025' (cita analise Indeed + Financial Times)",
+      "resumo_pt": "Salesforce afirma, em blog proprio, ter se comprometido a montar um time de 1.000 FDEs. O 800% e repasse de Indeed/FT.",
+      "url": "https://www.salesforce.com/blog/forward-deployed-engineer/",
+      "conferido_em": "2026-11-20",
+      "tipo": "blog oficial",
+      "remoto_ou_fora_eua": "n/a"
+    },
+    {
+      "empresa_ou_fonte": "Salesforce Newsroom",
+      "dado_literal": "'Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times'",
+      "resumo_pt": "Salesforce repete o 800% atribuindo a Indeed e Financial Times. A fonte primaria (FT) nao foi aberta por mim.",
+      "url": "https://www.salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human/",
+      "conferido_em": "2026-11-20",
+      "tipo": "blog oficial (repassa dado de terceiros)",
+      "remoto_ou_fora_eua": "n/a"
+    },
+    {
+      "empresa_ou_fonte": "Fortune (dados Lightcast), 3 set 2026",
+      "dado_literal": "'Job postings for forward-deployed engineers rose more than 1000% between January and August 2026, compared to the same period last year—and more than 4,600% compared to 2023, according to Lightcast data.' ... 'the median advertised salaries for forward-deployed engineers was more than $188,000—compared to roughly $145,000 for traditional software engineers.' ... 'At some tech giants like Anthropic, compensation for some forward-deployed roles can even reach $400,000.'",
+      "resumo_pt": "Vagas de FDE cresceram mais de 1000% (jan-ago 2026 vs 2025), contra 13% do mercado de tecnologia; salario anunciado mediano acima de US$ 188 mil vs ~US$ 145 mil de engenheiro de software comum.",
+      "url": "https://fortune.com/2026/09/03/forward-deployed-engineers-fast-growing-six-figure-silicon-valley-job-integrate-ai-with-customers-tech-careers-palantir/",
+      "conferido_em": "2026-11-20",
+      "tipo": "imprensa (cita Lightcast)",
+      "remoto_ou_fora_eua": "n/a"
+    },
+    {
+      "empresa_ou_fonte": "Indeed (dados) via imprensa - EUA e India",
+      "dado_literal": "Resultado de busca (nao aberto na fonte): 643 vagas de forward-deployed em abril/2025 vs 5.330 em abril/2026 (Business Insider citando Indeed); India +1.807% a/a em jun/2026 (relatorio Indeed citado por Analytics India Mag/IBTimes). Economista do Indeed Hiring Lab diz que o total absoluto segue 'na casa dos milhares'.",
+      "resumo_pt": "Numeros de Indeed existem so via imprensa; nao localizei post do Indeed Hiring Lab sobre FDE. Usar so com cuidado e dizendo 'segundo o Indeed, via Business Insider'. Lembrar que a base de 2025 era pequena.",
+      "url": "https://analyticsindiamag.com/ai-news/forward-deployed-engineer-job-postings-in-india-grew-nearly-19x-in-a-year-report",
+      "conferido_em": "2026-11-20",
+      "tipo": "imprensa (nao verificado na fonte primaria)",
+      "remoto_ou_fora_eua": "India (Indeed)"
+    },
+    {
+      "empresa_ou_fonte": "eWeek citando Financial Times (2025)",
+      "dado_literal": "Resumo da busca (pagina deu 403, nao aberta): OpenAI criou o time de FDE no inicio de 2024 e planejava ~50 engenheiros em 2025; Anthropic planejava multiplicar por 5 o time de applied AI em 2025.",
+      "resumo_pt": "Metas de contratacao antigas (2025), so por imprensa e nao verificadas na fonte. Nao narrar como fato.",
+      "url": "https://www.eweek.com/news/openai-anthropic-cohere-ai-hiring/",
+      "conferido_em": "2026-11-20",
+      "tipo": "imprensa (403, nao aberta)",
+      "remoto_ou_fora_eua": "n/a"
+    },
+    {
+      "empresa_ou_fonte": "Fortune sobre MIT NANDA 'The GenAI Divide' (ago 2025)",
+      "dado_literal": "Titulo: 'MIT report: 95% of generative AI pilots at companies are failing'. Trecho: 'Purchasing AI tools from specialized vendors and building partnerships succeed about 67% of the time, while internal builds succeed only one-third as often.'",
+      "resumo_pt": "Por que a funcao existe: relatorio do MIT diz que a grande maioria dos pilotos de IA generativa nao gera retorno. Ressalva: o '95%' vem de metodologia contestada (amostra pequena; fala em deploy, nao em 'falha'). Nao li o PDF original do MIT.",
+      "url": "https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/",
+      "conferido_em": "2026-11-20",
+      "tipo": "imprensa (cita relatorio do MIT; PDF original nao aberto)",
+      "remoto_ou_fora_eua": "n/a"
+    },
+    {
+      "empresa_ou_fonte": "Fortune - Dice (presidente Paul Farnsworth)",
+      "dado_literal": "'...connecting them to proprietary data, existent systems and specific workflows can be a big roadblock to overcome. Forward-deployed engineers can help fill that gap.'",
+      "resumo_pt": "Explicacao de por que o papel existe: a IA esta pronta, o dificil e ligar aos dados e sistemas do cliente. Opiniao de executivo do Dice, nao dado.",
+      "url": "https://fortune.com/2026/09/03/forward-deployed-engineers-fast-growing-six-figure-silicon-valley-job-integrate-ai-with-customers-tech-careers-palantir/",
+      "conferido_em": "2026-11-20",
+      "tipo": "imprensa",
+      "remoto_ou_fora_eua": "n/a"
+    }
+  ],
+  "nao_confirmado": [
+    "Anthropic FDE EUA nivel pleno: a pagina antiga (4985877008, 'US$200-300K' em buscas) redireciona para a lista de vagas (encerrada); no feed oficial so aparece Staff FDE (US$ 280-320K).",
+    "Google Cloud FDE (Sao Paulo, ingles+portugues): vagas existem em agregadores (AnitaB, aijobs.net) mas nao abri careers.google.com; sem faixa salarial confirmada.",
+    "Salesforce: sem faixa em fonte oficial (so Dice/Built In); 1.000 FDEs so em blog da propria Salesforce, sem pagina de imprensa/relatorio independente.",
+    "Glean, Rippling, Mistral, ElevenLabs, Cursor/Anysphere: feeds publicos sem vagas FDE ou board nao acessivel por feed publico.",
+    "Sierra: so 'Strategist, Agent Development' ($200K – $290K) e 'Technical Program Manager' ($245K – $295K), cargos adjacentes, nao FDE.",
+    "Cognition: faixas FDE nao publicadas no feed.",
+    "Clara (fintech LatAm, Greenhouse), Taktile (Sao Paulo), McKinsey QuantumBlack (Sao Paulo), CI&T, NextLink: apareceram em busca como vagas FDE no Brasil, mas nao confirmei na pagina oficial (Clara abriu so lista geral; McKinsey deu erro).",
+    "Post do Indeed Hiring Lab ou LinkedIn Economic Graph especifico sobre FDE: nao encontrei; Indeed so por imprensa.",
+    "Declaracao oficial de OpenAI/Anthropic com numero de FDEs a contratar: nao encontrada em fonte primaria."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "triagem de e-mails de suporte: casos NOVOS (não usados para corrigir a v2)",
+  "descricao": "Conjunto separado. Serve para ver se a v2 aprendeu a regra ou só decorou os 30 casos de casos.json.",
+  "categorias": ["cobranca", "acesso", "entrega", "cancelamento", "outro"],
+  "casos": [
+    {"id": 101, "entrada": "Fui debitado no cartão sem ter comprado nada", "esperado": "cobranca"},
+    {"id": 102, "entrada": "O site diz que meu e-mail não está cadastrado", "esperado": "acesso"},
+    {"id": 103, "entrada": "A caixa veio vazia", "esperado": "entrega"},
+    {"id": 104, "entrada": "Não quero mais o serviço a partir do mês que vem", "esperado": "cancelamento"},
+    {"id": 105, "entrada": "Vocês emitem nota fiscal para empresa?", "esperado": "outro"},
+    {"id": 106, "entrada": "O valor da mensalidade aumentou sem aviso", "esperado": "cobranca"},
+    {"id": 107, "entrada": "Meu acesso expira toda hora e tenho que entrar de novo", "esperado": "acesso"},
+    {"id": 108, "entrada": "O motoboy não achou meu prédio", "esperado": "entrega"},
+    {"id": 109, "entrada": "Quero suspender a conta por dois meses, não cancelar", "esperado": "cancelamento"},
+    {"id": 110, "entrada": "Adorei o produto, vão lançar outras cores?", "esperado": "outro"}
+  ]
+}

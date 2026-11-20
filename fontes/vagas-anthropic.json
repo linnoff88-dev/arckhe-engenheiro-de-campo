@@ -1,0 +1,28 @@
+{
+  "data_conferencia": "2026-11-20",
+  "conferido": true,
+  "nota": "Só os trechos sem número são usados no guia (política de números do kit).",
+  "vagas": [
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391021008",
+      "titulo": "Forward Deployed Engineer",
+      "trechos_literais": [
+        "Deliver technical artifacts for customers like MCP servers, sub-agents, and agent skills that will be used in production workflows.",
+        "Identify and codify repeatable deployment patterns and contribute insights back to our Product and Engineering teams.",
+        "Former technical founders are also encouraged to apply.",
+        "Strong communication skills to conduct discovery with customers and to convey technical concepts to diverse stakeholders while maintaining a low ego and collaborative approach.",
+        "Strong programming skills with proficiency in Python (and ideally in one or more additional languages like TypeScript, Java, etc) and experience shipping production applications"
+      ],
+      "observacao_sem_numero": "A vaga também pede viagem frequente ao cliente e anos de experiência em função técnica com cliente; os números foram omitidos pela política do kit."
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5449229008",
+      "titulo": "Staff Forward Deployed Engineer",
+      "trechos_literais": [
+        "Customers bring you in to lead, not only to implement: you decide what should be built, and then make sure it gets built well.",
+        "you can walk into a discovery conversation with only a business problem and leave with a defensible technical strategy for a secure, production-ready design inside a complex enterprise environment of legacy systems, with identity and access, and compliance requirements.",
+        "everyday use of AI coding tools with the judgment to review and steer."
+      ]
+    }
+  ]
+}

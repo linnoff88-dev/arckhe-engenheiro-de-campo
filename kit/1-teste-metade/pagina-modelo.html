@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Qual metade você tem? · Engenheiro de campo de IA</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0c10;--card:#16161e;--line:#272730;--tx:#e6e6e6;--mut:#a8a8b3;--amb:#FACC15;--sky:#38bdf8}
+@media (prefers-color-scheme: light){:root{--bg:#faf8f3;--card:#fff;--line:#e5e1d8;--tx:#1c1c22;--mut:#55555f;--amb:#a16207;--sky:#0369a1}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Inter,system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px 60px}
+h1{font-family:Sora,sans-serif;font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.15;margin:.2em 0}
+h1 b{color:var(--amb)}.lead{color:var(--mut)}
+a{color:var(--sky)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.q h3{margin:0 0 10px;font-size:1rem}
+.q label{display:block;padding:8px 10px;border-radius:8px;cursor:pointer}
+.q label:hover{background:rgba(250,204,21,.08)}
+.q input{margin-right:8px;accent-color:var(--amb)}
+button{background:var(--amb);color:#111;border:0;border-radius:10px;padding:12px 20px;font-weight:700;font-size:1rem;cursor:pointer}
+#res{display:none;background:var(--card);border:1px solid var(--amb);border-radius:14px;padding:18px;margin-top:20px}
+.bar{height:12px;background:var(--line);border-radius:6px;overflow:hidden;margin:4px 0 12px}
+.bar i{display:block;height:100%;background:var(--amb)}
+.falta{color:#f87171;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+<p><a href="../../guia/">← voltar ao guia</a></p>
+<h1>Qual <b>metade</b> você tem?</h1>
+<p class="lead">O engenheiro de campo de IA precisa de duas metades: o <b>construtor</b> (faz funcionar e prova) e a <b>confiança do cliente</b> (descobre o problema real e faz o time usar). Responda com sinceridade: 12 perguntas, 3 minutos. Nada sai do seu navegador.</p>
+<form id="f"></form>
+<p id="aviso" class="falta"></p>
+<button type="button" id="ver">Ver meu resultado</button>
+<section id="res" aria-live="polite"></section>
+</main>
+<script>
+const DADOS = /*PERGUNTAS*/null;
+// a ordem das opções muda a cada vez que a página abre: a melhor não fica sempre no mesmo lugar
+function embaralhar(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const f = document.getElementById('f');
+DADOS.perguntas.forEach((p, i) => {
+  const d = document.createElement('div'); d.className = 'q';
+  d.innerHTML = '<h3>' + (i + 1) + '. ' + p.texto + '</h3>' +
+    embaralhar(p.opcoes.map((o, j) => [o, j])).map(([o, j]) => '<label><input type="radio" name="' + p.id + '" value="' + j + '">' + o.texto + '</label>').join('');
+  f.appendChild(d);
+});
+function pontuar(respostas) {
+  const pontos = {}; Object.keys(DADOS.metades).forEach(m => pontos[m] = 0);
+  const maximo = {}; Object.keys(DADOS.metades).forEach(m => maximo[m] = 0);
+  DADOS.perguntas.forEach((p, i) => { pontos[p.metade] += p.opcoes[respostas[i]].pontos; maximo[p.metade] += Math.max(...p.opcoes.map(o => o.pontos)); });
+  const dif = pontos.construtor - pontos.confianca;
+  const fraca = Math.abs(dif) <= DADOS.empate_ate ? 'empate' : (dif < 0 ? 'construtor' : 'confianca');
+  return {pontos, maximo, fraca, plano: DADOS.planos[fraca]};
+}
+document.getElementById('ver').onclick = () => {
+  const resp = DADOS.perguntas.map(p => { const e = f.querySelector('input[name="' + p.id + '"]:checked'); return e ? +e.value : null; });
+  const faltam = resp.filter(r => r === null).length;
+  document.getElementById('aviso').textContent = faltam ? 'Faltam ' + faltam + ' resposta(s).' : '';
+  if (faltam) return;
+  const r = pontuar(resp), out = document.getElementById('res');
+  out.innerHTML = Object.keys(DADOS.metades).map(m =>
+    '<div><b>' + DADOS.metades[m].split(':')[0] + '</b>: ' + r.pontos[m] + '/' + r.maximo[m] +
+    '<div class="bar"><i style="width:' + (100 * r.pontos[m] / r.maximo[m]) + '%"></i></div></div>').join('') +
+    '<h2>' + r.plano.titulo + '</h2><p>' + r.plano.foco + '</p><ol>' + r.plano.passos.map(s => '<li>' + s + '</li>').join('') + '</ol>' +
+    '<p>Os passos estão no kit: <a href="https://github.com/inematds/engenheiro-de-campo">github.com/inematds/engenheiro-de-campo</a></p>';
+  out.style.display = 'block'; out.scrollIntoView({behavior: 'smooth'});
+};
+</script>
+</body>
+</html>

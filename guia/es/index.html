@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nueva profesión: ingeniero de campo de IA — qué es, su potencial y el kit gratis para prepararte</title>
+<meta name="description" content="Ingeniero de campo de IA (forward deployed engineer): quien entra en la empresa, descubre el problema real, hace funcionar la IA y lo demuestra con datos. Qué es, cuánto paga, qué aprender y un kit gratis para prepararte.">
+<link rel="canonical" href="https://inematds.github.io/engenheiro-de-campo/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/engenheiro-de-campo/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/engenheiro-de-campo/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/engenheiro-de-campo/guia/es/">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/engenheiro-de-campo/guia/">
+<meta property="og:title" content="Nueva profesión: ingeniero de campo de IA">
+<meta property="og:description" content="Quien hace funcionar la IA dentro de la empresa ya tiene una profesión. Qué es, su potencial y el kit gratis para prepararte.">
+<meta property="og:image" content="https://inematds.github.io/engenheiro-de-campo/guia/assets/banner-es.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#FACC15; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    --fill:#FACC15; --tint:rgba(250,204,21,.12); --ok:#7CE0C6; --bad:#F0918A;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#a16207; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    --fill:#FACC15; --tint:#FEF9C3; --ok:#0E6B55; --bad:#A83426;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light nav{background:rgba(246,247,249,.85)}
+  body.light .amb{color:var(--txt);background:linear-gradient(transparent 55%,#FACC15 55%)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  body.light main a:not(.btn),body.light footer a{color:#854d0e;text-decoration:underline;text-decoration-color:#FACC15;text-decoration-thickness:3px}
+  pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb);white-space:nowrap}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut);white-space:nowrap} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:var(--tint)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--fill);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora;border:0;cursor:pointer;font-size:1rem}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:1760px){nav .links a.opt{display:none}}
+  @media(max-width:1220px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(250,204,21,.18),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero .wrap>div{min-width:0}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.15rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:46ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:66ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.95rem;margin:0}
+  .card p+p{margin-top:.6em}
+  .card ul{margin:8px 0 0;padding-left:20px;color:var(--mut);font-size:.95rem}.card li{margin:5px 0}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0;margin:.4em 0 0}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div{min-width:0}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--fill);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .4em}
+  .tag{display:inline-block;font-family:Sora;font-size:.72rem;letter-spacing:.06em;color:var(--txt);background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:.1em .7em;margin-left:.4em;vertical-align:middle;font-weight:600}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:6px}
+  @media(max-width:720px){.stats{grid-template-columns:1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+  .stat b{display:block;font:800 clamp(1.7rem,4vw,2.4rem)/1.05 Sora,sans-serif;letter-spacing:-.02em;color:var(--amb)}
+  body.light .stat b{color:var(--txt)}
+  .stat span{display:block;color:var(--mut);font-size:.93rem;margin-top:.5em}
+  .stat .emp{display:block;font:600 .78rem/1.3 Sora,sans-serif;font-style:normal;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:.45em}
+  .salarios .stat b{font-size:clamp(1.45rem,2.4vw,1.9rem)}
+  .stat.imp{border-style:dashed} .stat.imp b{color:var(--txt)}
+  .fonte{font-size:.86rem;color:var(--mut);margin-top:14px;max-width:80ch}
+  .metades{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch}
+  .metades .mais{display:flex;align-items:center;justify-content:center;font:800 2rem Sora,sans-serif;color:var(--amb)}
+  @media(max-width:700px){.metades{grid-template-columns:1fr}.metades .mais{padding:0}}
+  blockquote{margin:10px 0 0;padding:12px 16px;border-left:3px solid var(--fill);background:var(--bg2);border-radius:0 10px 10px 0;font-size:.95rem;color:var(--txt)}
+  .prova{background:var(--card);border:1px solid var(--amb);border-radius:16px;padding:26px 26px 22px;margin-top:6px}
+  body.light .prova{border-color:#EAB308}
+  .tl{list-style:none;margin:0;padding:0;counter-reset:t}
+  .tl li{position:relative;padding:0 0 18px 48px;counter-increment:t}
+  .tl li::before{content:counter(t);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:10px;background:var(--fill);color:#1a1206;font:800 .95rem/32px Sora,sans-serif;text-align:center}
+  .tl li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
+  .tl li:last-child::after{display:none}
+  .tl b{font-family:Sora}
+  .tbl{width:100%;border-collapse:collapse;font-size:.95rem}
+  .tbl th,.tbl td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl th{font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+  .tbl td:first-child{font-family:Sora;font-weight:800;color:var(--amb);white-space:nowrap}
+  body.light .tbl td:first-child{color:var(--txt)}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  @media(max-width:600px){.tbl thead{display:none} .tbl tr{display:block;border-bottom:1px solid var(--line);padding:8px 0} .tbl tr:last-child{border-bottom:none} .tbl td{display:block;border:none;padding:3px 14px}}
+  .placar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 6px}
+  @media(max-width:720px){.placar{grid-template-columns:1fr}}
+  .placar div{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .placar b{display:block;font:800 1.8rem Sora,sans-serif;color:var(--amb)}
+  body.light .placar b{color:var(--txt)}
+  .placar span{color:var(--mut);font-size:.92rem}
+  .video-em-producao{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;max-width:860px;border:1px dashed var(--line);border-radius:16px;background:var(--card);overflow:hidden;text-align:center}
+  .video-em-producao img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+  .video-em-producao span{position:relative;font-family:Sora;font-size:1.15rem;font-weight:600;color:#fff;background:rgba(12,12,16,.7);padding:.6em 1.1em;border-radius:999px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">🧭</span> Ingeniero de campo</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#oque">Qué es</a>
+    <a class="sec opt" href="#potencial">El potencial</a>
+    <a class="sec" href="#mercado">El mercado</a>
+    <a class="sec opt" href="#semana">La semana</a>
+    <a class="sec" href="#formacao">La formación</a>
+    <a class="sec" href="#vagas">Las vacantes</a>
+    <a class="sec opt" href="#entrevista">La entrevista</a>
+    <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+    <a class="btn" href="https://github.com/inematds/engenheiro-de-campo" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">Nueva profesión · vacantes oficiales verificadas · kit gratis</span>
+      <h1>Nueva profesión: <span class="amb">ingeniero de campo de IA</span></h1>
+      <p class="lead">Las empresas compran IA más rápido de lo que logran hacerla funcionar. Quien se incorpora a una empresa, encuentra el problema real, hace funcionar la IA y lo demuestra con números convirtió eso en una profesión, y las mayores empresas de IA ya están contratando: las vacantes oficiales publican salarios de US$ 135 mil a US$ 415 mil al año, y ya hay una vacante abierta con Brasil en la ubicación. Aquí entenderás de qué se trata y te prepararás paso a paso con un kit gratis.</p>
+      <div class="cta">
+        <a class="btn" href="#oque">Qué es esta profesión</a>
+        <a class="btn ghost" href="#formacao">Cómo prepararte</a>
+      </div>
+    </div>
+    <figure><img src="../assets/banner-es.jpg" alt="Ingeniero de campo: la nueva profesión de la IA. Descubre el problema, hace funcionar la IA y lo demuestra con datos" width="1400" height="788"></figure>
+  </div>
+</header>
+
+<main>
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">En resumen</span>
+  <p><strong>Ingeniero de campo de IA</strong> (en inglés, <em>forward deployed engineer</em>, o FDE) es el profesional que la empresa de IA envía <strong>a las instalaciones del cliente</strong>: descubre el problema real, construye la solución junto con el equipo, demuestra que funciona con una prueba medida y hace que la gente la use. Esta guía explica la profesión, su potencial y quién puede seguir este camino. El kit gratis en GitHub es tu formación: una prueba para saber qué te falta, una ruta de aprendizaje, un cliente simulado para practicar, modelos, un ejemplo de prueba que funciona en tu computadora y práctica para la entrevista. Para usarlo, solo tienes que leerlo; para practicar, usas el Claude Code o el Codex que ya tienes.</p>
+  <figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-es.jpg" alt="Ingeniero de campo de IA: qué es la profesión, cuál mitad tienes, qué aprender, cliente simulado, eval: la prueba, dónde están las vacantes" loading="lazy" width="1400" height="788" style="width:100%;height:auto;display:block"></figure>
+</div></section>
+
+<section id="oque"><div class="wrap">
+  <span class="chip">Qué es</span>
+  <h2>Quien hace que la IA <span class="amb">funcione de verdad</span> dentro de la empresa</h2>
+  <p class="sub">En lugar de entregar una contraseña y desearte suerte, la empresa de IA envía a un ingeniero para que se siente junto al cliente. No vende horas de trabajo ni software: entrega un resultado.</p>
+  <div class="grid g2">
+    <div class="card"><h3>😩 Por qué existe este puesto</h3><p>La empresa compra una IA potente y, meses después, nada funciona. La IA no se comunica con el sistema antiguo, los datos están desordenados, nadie sabe qué pedir y el equipo vuelve a la hoja de cálculo.</p><p>El problema no es la IA. Falta alguien que una el sistema desordenado de la empresa con lo que la IA sabe hacer.</p></div>
+    <div class="card"><h3>🧭 Qué hace el ingeniero de campo</h3><ul><li><strong>Descubre</strong> el problema real (el cliente pide «un chatbot»; el problema suele ser otro).</li><li><strong>Construye</strong> junto con el cliente, en sus sistemas y con sus datos.</li><li><strong>Demuestra</strong> con una prueba medida, no con una demostración atractiva.</li><li><strong>Hace que el equipo la use</strong> y vuelve para medir.</li></ul></div>
+  </div>
+  <h3 style="margin:34px 0 14px;font-size:1.25rem">Lo poco común es tener las <span class="amb">dos mitades</span></h3>
+  <div class="metades">
+    <div class="card"><h3>🛠️ Quien construye</h3><p>Hace que las cosas funcionen: código (con la IA escribiéndolo), integraciones entre sistemas, agentes de IA y la prueba que demuestra el resultado.</p></div>
+    <div class="mais" aria-hidden="true">+</div>
+    <div class="card"><h3>🤝 La persona en quien confía el cliente</h3><p>Descubre el problema correcto, acuerda qué significa «listo», presenta el resultado a la dirección y logra que el equipo adopte la herramienta.</p></div>
+  </div>
+  <p class="fonte">Un ingeniero al que le gusta tratar con gente es poco común. También lo es un consultor que construye. Las empresas se disputan a quien tiene las dos mitades, y por eso la formación empieza por descubrir cuál te falta.</p>
+</div></section>
+
+<section id="video"><div class="wrap">
+  <span class="chip">Video</span>
+  <h2>Entiende la profesión en pocos minutos</h2>
+  <p class="sub">El video explicativo de esta guía está en producción y aparecerá aquí cuando se publique.</p>
+  <!-- VIDEO: entra o explicavideo do projeto quando publicado -->
+  <div class="video-em-producao"><img src="../assets/hero.jpg" alt="" loading="lazy"><span>🎬 Video en producción</span></div>
+</div></section>
+
+<section id="potencial"><div class="wrap">
+  <span class="chip">El potencial</span>
+  <h2>Las mayores empresas de IA <span class="amb">ya están contratando</span></h2>
+  <p class="sub">No es una tendencia de redes sociales: son vacantes abiertas que incluyen el nombre de la profesión en el título y aparecen en las páginas oficiales de las empresas. Las verificamos el 20/11/2026. Cuánto pagan y dónde hay vacantes, incluso en Brasil, está más abajo, en Datos del mercado.</p>
+  <div class="stats">
+    <div class="stat"><b>Equipo desde cero</b><span>la vacante de gerente de ingenieros de campo de Anthropic busca a alguien que sea el «líder fundador» de un equipo que definirá cómo las empresas adoptan la IA.</span></div>
+    <div class="stat"><b>OpenAI y Anthropic</b><span>ambas tenían varias vacantes con «Forward Deployed» en el título, en varias ciudades, el día de la verificación.</span></div>
+    <div class="stat"><b>Exfundadores bienvenidos</b><span>la vacante de Anthropic dice que también anima a los exfundadores técnicos a postularse. No es solo para quienes tienen una trayectoria lineal.</span></div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><h3>📄 Lo que pide la vacante de Anthropic</h3><blockquote>"Deliver technical artifacts for customers like MCP servers, sub-agents, and agent skills that will be used in production workflows."</blockquote><p style="margin-top:.6em">En otras palabras: entregar al cliente servidores MCP (la forma estándar de darle herramientas a la IA), subagentes y skills (recetas que sigue la IA) que se usarán en la práctica. Es lo mismo que mucha gente ya hace en Claude Code, pero dentro de una empresa y con consecuencias reales.</p><blockquote>"Identify and codify repeatable deployment patterns"</blockquote><p style="margin-top:.6em">Tomar lo que funcionó una vez y convertirlo en una receta repetible.</p></div>
+    <div class="card"><h3>🎯 Lo que espera el puesto sénior</h3><blockquote>"walk into a discovery conversation with only a business problem and leave with a defensible technical strategy"</blockquote><p style="margin-top:.6em">Llegar solo con un problema de negocio y salir con una estrategia técnica sólida. Eso es exactamente lo que evalúa la entrevista y lo que practica el kit.</p><p><a href="https://job-boards.greenhouse.io/anthropic/jobs/5449229008" target="_blank" rel="noopener">Ver la vacante sénior</a> · <a href="https://job-boards.greenhouse.io/anthropic/jobs/5391021008" target="_blank" rel="noopener">ver la vacante de FDE</a> · <a href="https://jobs.ashbyhq.com/openai/967f94aa-1706-4dba-ac89-bfbc2c38b688" target="_blank" rel="noopener">ver la vacante de OpenAI</a></p></div>
+  </div>
+  <p class="fonte">Los fragmentos anteriores son de vacantes oficiales, verificadas el 20/11/2026. Las vacantes cambian: consulta siempre la página oficial. Registro en <a href="https://github.com/inematds/engenheiro-de-campo/tree/main/fontes" target="_blank" rel="noopener">fontes/</a>.</p>
+</div></section>
+
+<section id="mercado"><div class="wrap">
+  <span class="chip">Datos del mercado</span>
+  <h2>Cuánto pagan y dónde hay vacantes, <span class="amb">incluso en Brasil</span></h2>
+  <p class="sub">No es solo OpenAI. Verificamos las vacantes y las páginas oficiales de 11 empresas el 20/11/2026 y anotamos lo que publica cada una. Cada cifra de abajo incluye el enlace a la vacante.</p>
+  <div class="stats">
+    <div class="stat"><b>3 vacantes en Brasil</b><span>abiertas con Brasil en la ubicación, en tres empresas distintas de IA y datos. Más detalles abajo.</span></div>
+    <div class="stat"><b>1.000</b><span>ingenieros de campo: es el equipo que Salesforce dice en su propio blog que se comprometió a formar. <a href="https://www.salesforce.com/blog/forward-deployed-engineer/" target="_blank" rel="noopener">Leer en el blog de Salesforce</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><b>115 de 897</b><span>vacantes abiertas de Databricks incluyen «Forward Deployed», «FDE» o «Deployment Strategist» en el título: casi 1 de cada 8. Las contamos en la página oficial el 20/11/2026. <a href="https://www.databricks.com/company/careers/open-positions" target="_blank" rel="noopener">Ver la página oficial (lista en texto)</a></span></div>
+  </div>
+
+  <div class="prova" style="margin-top:22px">
+    <h3 style="font-size:1.25rem;margin-bottom:.3em">🇧🇷 Vacantes abiertas con Brasil en la ubicación</h3>
+    <p class="mut" style="margin:0 0 16px">Ninguna de las tres publica el salario. Las cifras en dólares que aparecen más abajo corresponden a vacantes en Estados Unidos y Londres, no en Brasil.</p>
+    <div class="grid g3">
+      <div class="card"><h3>Decagon · remota</h3><p>Ingeniero de implementación de agentes de IA (<em>Agent Deployment Engineer</em>), el mismo trabajo con otro nombre. Vacante <strong>remota, en Brasil</strong>, publicada el 18/11/2026. Pide dominio fluido de inglés, portugués y español.</p><p><a href="https://jobs.ashbyhq.com/decagon/5069134e-6af9-4274-9b81-c8e394bd7b6f" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</p></div>
+      <div class="card"><h3>Cognition · São Paulo</h3><p>Ingeniero de campo para América Latina (<em>Forward Deployed Engineer - LATAM</em>), de la empresa que creó Devin. <strong>Presencial en São Paulo</strong>, exige portugués nativo. Publicada el 20/05/2026.</p><p><a href="https://jobs.ashbyhq.com/cognition/8139c589-494a-449a-b608-b11a689e7b2e" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</p></div>
+      <div class="card"><h3>Databricks · Brasil</h3><p>Ingeniero de campo sénior (<em>FDE Brazil</em>), en una vacante que permanece abierta para recibir postulaciones. Ubicación: Brasil; la vacante no especifica si es remota.</p><p><a href="https://databricks.com/company/careers/open-positions/job?gh_jid=8638732002" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</p></div>
+    </div>
+  </div>
+
+  <h3 style="margin:34px 0 6px;font-size:1.25rem">Cuánto publican las empresas, <span class="amb">al año</span></h3>
+  <p class="mut" style="margin:0 0 16px;max-width:70ch">Rango salarial anual que la propia empresa indica en la vacante, en dólares estadounidenses (US$) o libras esterlinas (£). «Más acciones» significa que la empresa también paga con participación accionaria.</p>
+  <div class="grid g3 salarios">
+    <div class="stat"><i class="emp">Anthropic · gerente</i><b>US$ 320–405 mil</b><span>gerente de ingenieros de campo, New York. <a href="https://job-boards.greenhouse.io/anthropic/jobs/5099753008" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Cohere</i><b>US$ 240–415 mil</b><span>más acciones; vacante remota dentro de Estados Unidos. <a href="https://jobs.ashbyhq.com/cohere/8df498e9-aba8-487f-80ba-362b492bad09" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Harvey</i><b>US$ 254,6–350 mil</b><span>más acciones; ingeniero de campo de finanzas, IA para estudios jurídicos y finanzas. <a href="https://jobs.ashbyhq.com/harvey/43c6e218-ea85-4519-b2fe-dd188ff3234f" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Anthropic · sénior</i><b>US$ 280–320 mil</b><span>ingeniero de campo de nivel <em>Staff</em> (por encima de sénior), New York, San Francisco o Seattle. <a href="https://job-boards.greenhouse.io/anthropic/jobs/5449229008" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Anthropic · Londres</i><b>£225–255 mil</b><span>ingeniero de campo en Londres, en libras. <a href="https://job-boards.greenhouse.io/anthropic/jobs/5423029008" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Ramp</i><b>US$ 189–330 mil</b><span>más acciones; ingeniero de campo de soluciones de IA, con sede en New York. <a href="https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">OpenAI</i><b>US$ 185–325 mil</b><span>más acciones; <em>Forward Deployed Software Engineer</em>, San Francisco. <a href="https://jobs.ashbyhq.com/openai/00207abc-49b7-465c-a219-f7c1140f8047" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">OpenAI</i><b>US$ 185–300 mil</b><span>más acciones; otra vacante, <em>Forward Deployed Engineer</em>, San Francisco (el texto de la vacante: «$185K – $300K • Offers Equity»). <a href="https://jobs.ashbyhq.com/openai/967f94aa-1706-4dba-ac89-bfbc2c38b688" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Databricks</i><b>US$ 182–250 mil</b><span>ingeniero de campo de IA; acepta trabajo remoto dentro de Estados Unidos. <a href="https://www.databricks.com/company/careers/professional-services-operations/ai-engineer--forward-deployed-engineering-ai-fde-8546367002" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Scale AI</i><b>US$ 180–225 mil</b><span>ingeniero de campo de agentes de IA, San Francisco. Otra vacante de la empresa, para el gobierno, ofrece de US$ 184 mil a US$ 292,5 mil. <a href="https://job-boards.greenhouse.io/scaleai/jobs/4694861005" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat"><i class="emp">Palantir</i><b>US$ 135–200 mil</b><span>salario fijo, más acciones y bonificaciones, en la empresa que creó esta función. <a href="https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0" target="_blank" rel="noopener">Ver la vacante</a> · verificado el 20/11/2026</span></div>
+    <div class="stat imp"><i class="emp">📰 En la prensa</i><b>más de 1.000%</b><span>de crecimiento en las vacantes de ingeniero de campo entre enero y agosto de 2026, en comparación con el mismo período de 2025, <strong>según la revista Fortune, con datos de la empresa de investigación Lightcast</strong>. No es un recuento nuestro. Artículo del 03/09/2026. <a href="https://fortune.com/2026/09/03/forward-deployed-engineers-fast-growing-six-figure-silicon-valley-job-integrate-ai-with-customers-tech-careers-palantir/" target="_blank" rel="noopener">Leer en Fortune</a> · verificado el 20/11/2026</span></div>
+  </div>
+  <p class="fonte">Cifras copiadas de la página de cada vacante oficial el 20/11/2026, en la moneda original, por año. En algunas, la cifra corresponde solo al salario fijo y el total puede ser mayor con acciones y bonificaciones. Las vacantes se abren, se cierran y cambian de rango: consulta siempre la página oficial. Todos los datos, con el texto exacto de cada vacante, están en <a href="https://github.com/inematds/engenheiro-de-campo/blob/main/fontes/mercado.json" target="_blank" rel="noopener">fontes/mercado.json</a>.</p>
+</div></section>
+
+<section id="quem"><div class="wrap">
+  <span class="chip">Quién puede</span>
+  <h2>No necesitas haber nacido programador</h2>
+  <p class="sub">Las vacantes piden Python, pero nadie espera que escribas todo a mano: Claude Code y Codex escriben el código. Se espera que sepas leerlo, pedir el cambio correcto y demostrar que funciona. Estas son algunas personas que suelen lograrlo:</p>
+  <div class="grid g3">
+    <div class="card"><h3>💻 Programador al que le gusta tratar con gente</h3><p>Ya sabe construir. Le falta practicar cómo descubrir el problema, definir el alcance y conversar con la dirección.</p></div>
+    <div class="card"><h3>📊 Consultor, analista o profesional de preventa que aprendió a construir</h3><p>Ya conversa con clientes. Le falta construir algo que resista el uso real y demostrarlo con una prueba.</p></div>
+    <div class="card"><h3>🚀 Fundador, profesional independiente o dueño de una agencia</h3><p>Ya hace este trabajo sin el título: entra en la empresa, descubre, construye y entrega.</p></div>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>⚠️ No es para todo el mundo</h3><p>Muchas vacantes requieren viajar con frecuencia para visitar clientes, tener algunos años de experiencia con clientes y conversar en inglés. Hay desorden: sistemas antiguos, datos faltantes, gente que se resiste. Si te gusta construir, te gusta la gente y no te asusta un poco de caos, es una gran oportunidad. Y es más difícil que se convierta en una moda pasajera que «ingeniero de prompts», porque no es una sola habilidad: es todo el ciclo de encontrar el problema, construir y demostrar.</p></div>
+  <p style="margin-top:22px"><a class="btn" href="../../kit/1-teste-metade/teste-metade.html">Haz la prueba: ¿qué mitad tienes? (3 min) (en portugués)</a></p>
+</div></section>
+
+<section id="semana"><div class="wrap">
+  <span class="chip">La semana</span>
+  <h2>Una semana típica <span class="amb">con el cliente</span></h2>
+  <p class="sub">Gran parte del tiempo se pasa con el cliente, junto a quienes hacen el trabajo. El ritmo suele ser este:</p>
+  <div class="tblwrap"><table class="tbl">
+    <thead><tr><th>Día</th><th>Qué hace</th><th>Qué entrega</th></tr></thead>
+    <tbody>
+      <tr><td>Lunes</td><td><strong>Descubrimiento</strong>: se sienta con el equipo de operaciones, observa el trabajo real y hace muchas preguntas.</td><td>El problema, explicado con las palabras del cliente.</td></tr>
+      <tr><td>Martes</td><td><strong>Alcance</strong>: qué problema, qué indicador cambiará, qué significa «listo».</td><td>Alcance de una página aprobado.</td></tr>
+      <tr><td>Miércoles</td><td><strong>Construcción</strong>: conecta el agente con los sistemas y datos del cliente.</td><td>Primera versión funcionando con datos reales.</td></tr>
+      <tr><td>Jueves</td><td><strong>Pruebas</strong>: escribe el eval (la lista de casos con la respuesta correcta, que asigna una nota) y lo ejecuta con casos reales del cliente.</td><td>Puntuación, lista de fallas, versión 2.</td></tr>
+      <tr><td>Viernes</td><td><strong>Demostración</strong> para quienes toman las decisiones + notas para el equipo de producto de la empresa de IA: dónde falló el modelo, qué piden siempre los clientes.</td><td>Aprobación, siguiente paso y lo que se convertirá en una receta.</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section id="formacao"><div class="wrap">
+  <span class="chip">La formación</span>
+  <h2>Cómo prepararte, <span class="amb">paso a paso</span>, con el kit</h2>
+  <p class="sub">Cada paso es una pieza del kit gratis en GitHub. No tienes que hacer todo de la misma manera: dedica más tiempo a la mitad que la prueba muestre como débil.</p>
+  <div class="step"><div class="b">1</div><div><h3>Descubre qué mitad tienes <span class="tag">prueba</span></h3><p>12 preguntas sinceras. El resultado muestra los puntos de cada mitad y un plan de estudio para la más débil. Puedes hacerlo en el navegador, en 3 minutos.</p><p><a href="../../kit/1-teste-metade/teste-metade.html">Haz la prueba ahora (en portugués)</a></p></div></div>
+  <div class="step"><div class="b">2</div><div><h3>Sigue la ruta de aprendizaje <span class="tag">ruta</span></h3><p>Ocho temas, cada uno con una práctica concreta: Python con la IA escribiendo, conectar sistemas (APIs), agentes (la IA que decide el siguiente paso y usa herramientas), <strong>eval</strong> (la prueba que lo demuestra con una nota), descubrimiento, alcance, presentación a la dirección y lograr que el equipo la use. El tema más importante es eval.</p></div></div>
+  <div class="step"><div class="b">3</div><div><h3>Practica el descubrimiento con un cliente simulado <span class="tag">prompts listos</span></h3><p>Le pegas un pedido a la IA y se convierte en un cliente difícil (empresa de transporte, clínica, tienda u oficina de contabilidad) que pide la solución de moda y oculta el problema real. Solo lo descubrirás si haces buenas preguntas. Al final, evalúa tu conversación y te dice qué olvidaste.</p></div></div>
+  <div class="step"><div class="b">4</div><div><h3>Escribe el alcance en una página <span class="tag">modelo + verificador</span></h3><p>Cuatro partes: el problema con las palabras del cliente, <strong>el único indicador</strong> que cambiará, qué significa «listo» y qué queda fuera. Un verificador rechaza los alcances sin un indicador. Si no puedes decir cuál es, todavía no tienes un proyecto.</p></div></div>
+  <div class="step"><div class="b">5</div><div><h3>Aprende a demostrarlo: eval <span class="tag">funciona en tu computadora</span></h3><p>Una demostración muestra que algo funcionó una vez. Eval es una lista de casos reales con la respuesta correcta: asigna una puntuación, muestra cada error y compara versiones. El kit incluye un ejemplo completo, explicado en la <a href="#prova">prueba de abajo</a>, y muestra cómo reemplazarlo por tu automatización.</p></div></div>
+  <div class="step"><div class="b">6</div><div><h3>Haz un proyecto de prueba con un cliente real <span class="tag">guion + caso de estudio</span></h3><p>Basta con un proyecto si completas todo el ciclo: con tu equipo, un amigo o una empresa del barrio. Descubrimiento, alcance, construcción, eval, presentación, medir dos semanas después y escribir el caso de estudio con el antes y el después. Ese caso de estudio es tu audición.</p></div></div>
+  <div class="step"><div class="b">7</div><div><h3>Descubre dónde buscar vacantes <span class="tag">mapa de vacantes</span></h3><p>Los títulos equivalentes, los sitios donde publican las empresas y el camino desde América Latina (consulta <a href="#vagas">abajo</a>).</p></div></div>
+  <div class="step"><div class="b">8</div><div><h3>Practica la entrevista <span class="tag">prompts de práctica</span></h3><p>Entrevista de caso, presentación del proyecto de prueba, rondas técnicas y de comportamiento, con la IA en el papel del entrevistador (consulta <a href="#entrevista">abajo</a>).</p></div></div>
+  <div class="flow" aria-label="El ciclo del proyecto de prueba"><span>Descubrimiento</span><span class="arr">→</span><span>Alcance</span><span class="arr">→</span><span>Construir</span><span class="arr">→</span><span>Eval</span><span class="arr">→</span><span>Demostración</span><span class="arr">→</span><span>Medir</span><span class="arr">→</span><span>Caso de estudio</span></div>
+</div></section>
+
+<section id="prova"><div class="wrap">
+  <span class="chip">La prueba</span>
+  <h2>Por qué una <span class="amb">demostración no demuestra</span> y eval sí</h2>
+  <p class="sub">El kit incluye una clasificación de correos de soporte que separa cada mensaje en 5 filas (facturación, acceso, entrega, cancelación, otro). Ejecutamos eval del kit con ella, en la práctica, el 20/11/2026:</p>
+  <div class="prova">
+    <ol class="tl">
+      <li><b>La versión 1 pasaba en la demostración.</b><br><span class="mut">Los ejemplos obvios salían bien. En un eval con 30 correos de ejemplo, escritos como los que recibe un equipo de soporte, acertó 18. Falló con «NO PUEDO INICIAR SESIÓN», «cancelé, pero me siguen cobrando» y otros 10.</span></li>
+      <li><b>Corregimos cada falla y salió la versión 2.</b><br><span class="mut">30 de 30. Eval mostró 12 casos corregidos y ninguno empeorado.</span></li>
+      <li><b>Después probamos 10 correos nuevos que no se habían usado para corregir.</b><br><span class="mut">La versión 2 acertó solo 4, igual que la versión 1. Memorizó los casos, no aprendió la regla.</span></li>
+    </ol>
+    <div class="placar">
+      <div><b>18/30</b><span>versión 1 en casos conocidos</span></div>
+      <div><b>30/30</b><span>versión 2 en casos conocidos</span></div>
+      <div><b>4/10</b><span>versión 2 en casos nuevos</span></div>
+    </div>
+    <p class="fonte">Esto es exactamente lo que necesita ver el cliente y lo que ninguna demostración muestra: dónde funciona, dónde falla y si la mejora es real. El ejemplo usa reglas simples, sin IA, para que funcione en cualquier computadora; el kit muestra cómo reemplazarlo por tu automatización o tu agente.</p>
+  </div>
+</div></section>
+
+<section id="comecar"><div class="wrap">
+  <span class="chip">Cómo empezar</span>
+  <h2>Pídele a tu IA que <span class="amb">prepare tu formación</span></h2>
+  <p class="sub">No tienes que instalar nada a mano. La propia IA lee el kit, hace la prueba contigo y prepara el plan.</p>
+  <div class="grid g3">
+    <div class="card"><h3>1. Abre tu IA</h3><p>Claude Code o Codex, en una carpeta nueva solo para tu formación.</p></div>
+    <div class="card"><h3>2. Pega el pedido de abajo</h3><p>Le indica a la IA que lea el kit, haga la prueba contigo y te explique el plan en español sencillo.</p></div>
+    <div class="card"><h3>3. Acepta lo que te parezca útil</h3><p>Primero te muestra el plan. Apruebas lo que quieras y prepara solo eso.</p></div>
+  </div>
+  <div style="margin-top:20px">
+<pre id="pedidoTxt" style="white-space:pre-wrap">Lee el kit «ingeniero de campo de IA» en https://github.com/inematds/engenheiro-de-campo (el README lo explica todo).
+Después, ayúdame a prepararme para esta profesión, en español sencillo:
+1. Haz conmigo la prueba «qué mitad tienes», una pregunta a la vez, y dime el resultado.
+2. Prepara un plan de 4 semanas enfocado en mi mitad más débil, usando los pasos del kit.
+3. Empieza conmigo por el primer ejercicio del plan.
+No instales ni cambies nada en mi computadora sin mostrármelo antes y esperar a que diga que sí.</pre>
+    <button class="btn" id="copiarPedido" style="margin-top:10px">Copiar el pedido</button>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>🛠️ ¿Tienes perfil técnico y prefieres ejecutarlo a mano?</h3><p>Los comandos de la prueba, del verificador de alcance y de eval, los archivos y las pruebas automáticas están en el README de GitHub.</p><p><a class="btn ghost" href="https://github.com/inematds/engenheiro-de-campo/blob/main/README.es.md#instalación-técnica" target="_blank" rel="noopener">Ver la parte técnica</a></p></div>
+</div></section>
+
+<section id="vagas"><div class="wrap">
+  <span class="chip">Dónde buscar</span>
+  <h2>La misma vacante aparece con <span class="amb">distintos nombres</span></h2>
+  <p class="sub">Lee lo que dice la vacante que harás, no solo el título.</p>
+  <div class="grid g3">
+    <div class="card"><h3>🔎 Los títulos</h3><ul><li>Forward Deployed Engineer (FDE)</li><li>Forward Deployed Software Engineer</li><li>Deployed Engineer</li><li>Deployment Strategist (menos técnico)</li><li>Solutions Engineer</li><li>Applied AI Engineer</li><li>AI Consultant (consultor de IA)</li></ul></div>
+    <div class="card"><h3>📍 Dónde están</h3><ul><li>Páginas de empleo de las empresas de IA.</li><li>Los sitios de vacantes que usan: Greenhouse, Ashby y Lever.</li><li>Las bolsas de empleo de los fondos de inversión, que reúnen las vacantes de todas las startups en las que invierten.</li></ul></div>
+    <div class="card"><h3>🌱 «Founding FDE»</h3><p>Ahora mismo, las startups están formando estos equipos desde cero. El primer ingeniero de campo ayuda a diseñar la forma de trabajar y crece junto con el equipo.</p></div>
+  </div>
+  <h3 style="margin:30px 0 14px;font-size:1.2rem">🌎 ¿Y desde América Latina?</h3>
+  <div class="grid g3">
+    <div class="card"><h3>1. Trabajo remoto para el exterior</h3><p>Muchas vacantes exigen estar en el país de la empresa. Busca las que indiquen “remote” y verifica desde qué países aceptan candidatos. Es obligatorio tener un nivel de inglés conversacional para hablar con clientes, así que practica la entrevista en inglés.</p><p><a href="#mercado">Consulta las tres vacantes abiertas con Brasil en la ubicación.</a></p></div>
+    <div class="card"><h3>2. Empresas locales, otro nombre</h3><p>Consultoras, integradoras, empresas de software y bancos contratan el mismo trabajo como «consultor de IA», «ingeniero de soluciones» o «especialista en IA aplicada».</p></div>
+    <div class="card"><h3>3. Tu propio negocio</h3><p>Una consultora de automatización para pequeñas empresas es un equipo de ingenieros de campo. El proyecto de prueba se convierte en tu primer cliente y el caso de estudio, en tu material de venta.</p></div>
+  </div>
+</div></section>
+
+<section id="entrevista"><div class="wrap">
+  <span class="chip">La entrevista</span>
+  <h2>Prepárate siempre para <span class="amb">un caso</span></h2>
+  <p class="sub">Llegas solo con un problema de negocio y tienes que salir con una estrategia técnica que puedas defender. Regla de oro: pregunta qué quiere cambiar el negocio antes de proponer cualquier solución.</p>
+  <div class="grid g4">
+    <div class="card"><h3>🧩 Caso de negocio</h3><p>La IA representa a un cliente con un problema poco definido. Tú lo descubres, propones y defiendes una solución.</p></div>
+    <div class="card"><h3>📁 Tu proyecto de prueba</h3><p>Presentas el proyecto como si el entrevistador fuera el cliente: problema, indicador, prueba, qué salió mal.</p></div>
+    <div class="card"><h3>🔧 Ronda técnica</h3><p>Encontrar un defecto en código existente con herramientas de IA y diseñar un sistema con datos, acceso y riesgos.</p></div>
+    <div class="card"><h3>🗣️ Comportamiento</h3><p>Cliente insatisfecho, pedido que creció, error tuyo, decir que no. Siempre con situación, acción y resultado medible.</p></div>
+  </div>
+  <p class="fonte">El kit incluye un pedido listo para cada ronda: lo pegas en la IA y practicas tantas veces como quieras.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <span class="chip">Preguntas frecuentes</span>
+  <h2>Antes de <span class="amb">empezar</span></h2>
+  <div class="grid g2">
+    <div class="card"><h3>¿Necesito saber programar?</h3><p>Necesitas saber trabajar con código, pero no escribirlo todo a mano: la IA lo escribe, tú lo lees, pides el cambio correcto y lo demuestras con una prueba. Si esa es tu mitad más débil, la prueba te lo muestra y el plan empieza por ahí.</p></div>
+    <div class="card"><h3>¿Esta profesión es una moda pasajera?</h3><p>Nadie sabe qué pasará con un título. Pero el trabajo (encontrar el problema real, construir y demostrar) no es una sola habilidad: es todo el ciclo, y eso es lo que les falta a las empresas que compraron IA.</p></div>
+    <div class="card"><h3>¿Cuánto cuesta el kit?</h3><p>Nada. El kit y esta guía son gratis. El ejemplo de eval se ejecuta en tu computadora, sin internet y sin pagar nada. Para practicar, puedes usar el cliente simulado y el entrenamiento para entrevistas pegando las solicitudes en las versiones comunes de ChatGPT o Claude. Claude Code y Codex (las IA que trabajan con los archivos de tu computadora) requieren sus propias suscripciones.</p></div>
+    <div class="card"><h3>¿Y si no quiero trabajar para una empresa del exterior?</h3><p>El mismo trabajo existe aquí con otros nombres, y puedes hacerlo por cuenta propia, atendiendo a empresas de tu ciudad.</p></div>
+    <div class="card"><h3>¿Cuánto tiempo lleva?</h3><p>La prueba lleva 3 minutos. Según nuestra estimación, la ruta y un proyecto de prueba completo llevan de 1 a 2 meses en paralelo con tu trabajo, según cuánto te falte de tu mitad más débil.</p></div>
+    <div class="card"><h3>¿Necesito un cliente para empezar?</h3><p>Para practicar, no: bastan el cliente simulado y eval del kit. Para el proyecto de prueba, sí, pero puede ser tu propio equipo, un amigo o una empresa del barrio.</p></div>
+  </div>
+  <p class="fonte" style="margin-top:22px">Y tú: ¿cuál de las dos mitades ya tienes, la del constructor o la de la persona en quien confía el cliente? El kit es gratis en inema.club, directo en internet.</p>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">Python 3</div><div class="pill">Claude Code</div><div class="pill">Codex</div><div class="pill">sin API</div><div class="pill">MIT</div>
+    <p style="margin-top:18px">Ingeniero de campo de IA · gratis en inema.club, directo en internet ·
+      <a href="https://github.com/inematds/engenheiro-de-campo">inematds/engenheiro-de-campo</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='engenheiro-de-campo-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
+    });
+  })();
+  (function(){
+    var bt=document.getElementById('copiarPedido'), tx=document.getElementById('pedidoTxt');
+    if(!bt||!tx) return;
+    var rot=bt.textContent;
+    bt.addEventListener('click',function(){
+      try{ navigator.clipboard.writeText(tx.textContent).then(function(){ bt.textContent='✓'; setTimeout(function(){bt.textContent=rot;},2000); }); }catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>
