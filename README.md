@@ -1,4 +1,4 @@
-﻿# Engenheiro de campo de IA: a nova profissÃ£o e o kit para se preparar
+# Engenheiro de campo de IA: a nova profissÃ£o e o kit para se preparar
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,7 +6,7 @@
 </div>
 
 
-[![Engenheiro de campo: a nova profissÃ£o da IA](guia/assets/banner.jpg)](https://inematds.github.io/engenheiro-de-campo/guia/)
+[![Engenheiro de campo: a nova profissÃ£o da IA](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 **ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
@@ -16,16 +16,16 @@
 
 ## ðŸ“– Guia de uso
 
-Guia completo (o que Ã©, o potencial, a formaÃ§Ã£o passo a passo): **https://inematds.github.io/engenheiro-de-campo/guia/**
+Guia completo (o que Ã©, o potencial, a formaÃ§Ã£o passo a passo): **https://linnoff88-dev.github.io/
 
-Teste no navegador, 3 minutos: **https://inematds.github.io/engenheiro-de-campo/kit/1-teste-metade/teste-metade.html**
+Teste no navegador, 3 minutos: **https://linnoff88-dev.github.io/
 
 ## Comece pedindo para a sua IA
 
 Abra o Claude Code ou o Codex numa pasta nova e cole:
 
 ```
-Leia o kit "engenheiro de campo de IA" em https://github.com/inematds/engenheiro-de-campo (o README explica tudo).
+Leia o kit "engenheiro de campo de IA" em https://github.com/linnoff88-dev/engenheiro-de-campo (o README explica tudo).
 Depois me ajude a me preparar para essa profissÃ£o, em portuguÃªs simples:
 1. FaÃ§a comigo o teste "qual metade vocÃª tem", uma pergunta por vez, e me diga o resultado.
 2. Monte um plano de 4 semanas focado na minha metade mais fraca, usando os passos do kit.
@@ -73,7 +73,7 @@ Quem faz: ðŸ§  sessÃ£o (vocÃª, com a IA ao lado) Â· âš™ï¸ scri
 - Git, para baixar o kit. Nenhuma chave de API, nenhum modelo local.
 
 ```bash
-git clone https://github.com/inematds/engenheiro-de-campo.git
+git clone https://github.com/linnoff88-dev/engenheiro-de-campo.git
 cd engenheiro-de-campo
 ```
 
@@ -135,7 +135,7 @@ python3 -m unittest discover -s tests -v
 
 ## LicenÃ§a
 
-MIT. ConteÃºdo aberto e gratuito do [INEMA.CLUB](https://inema.club).
+MIT. ConteÃºdo aberto e gratuito do [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 

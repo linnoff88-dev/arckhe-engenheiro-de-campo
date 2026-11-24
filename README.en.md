@@ -1,6 +1,6 @@
 # AI forward deployed engineer: the new profession and the kit to get ready
 
-[![AI forward deployed engineer: the new AI profession](guia/assets/banner-en.jpg)](https://inematds.github.io/engenheiro-de-campo/guia/en/)
+[![AI forward deployed engineer: the new AI profession](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,16 +10,16 @@
 
 ## 📖 User guide
 
-Complete guide (what it is, its potential, step-by-step training): **https://inematds.github.io/engenheiro-de-campo/guia/en/**
+Complete guide (what it is, its potential, step-by-step training): **https://linnoff88-dev.github.io/
 
-Browser test, 3 minutes: **https://inematds.github.io/engenheiro-de-campo/kit/1-teste-metade/teste-metade.html** (in Portuguese)
+Browser test, 3 minutes: **https://linnoff88-dev.github.io/ (in Portuguese)
 
 ## Start by asking your AI
 
 Open Claude Code or Codex in a new folder and paste:
 
 ```
-Read the "AI forward deployed engineer" kit at https://github.com/inematds/engenheiro-de-campo (the README explains everything).
+Read the "AI forward deployed engineer" kit at https://github.com/linnoff88-dev/engenheiro-de-campo (the README explains everything).
 Then help me prepare for this profession, in plain English:
 1. Take the "which half do you have" test with me, one question at a time, and tell me the result.
 2. Build a 4-week plan focused on my weaker half, using the kit’s steps.
@@ -67,7 +67,7 @@ Who does what: 🧠 session (you, with AI alongside) · ⚙️ kit script · �
 - Git, to download the kit. No API key or local model required.
 
 ```bash
-git clone https://github.com/inematds/engenheiro-de-campo.git
+git clone https://github.com/linnoff88-dev/engenheiro-de-campo.git
 cd engenheiro-de-campo
 ```
 
@@ -129,4 +129,4 @@ python3 -m unittest discover -s tests -v
 
 ## License
 
-MIT. Open and free content from [INEMA.CLUB](https://inema.club).
+MIT. Open and free content from [ARCKHÉ AI](https://ARCKHÉ AI).

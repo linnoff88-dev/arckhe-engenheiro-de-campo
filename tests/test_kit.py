@@ -297,7 +297,7 @@ class SemNumerosProibidos(unittest.TestCase):
             links = set(re.findall(r'href="(https?://[^"]+)"', m.group(1)))
             hrefs[lang] = links
             for u in links:
-                if "github.com/inematds" not in u:
+                if "github.com/linnoff88-dev" not in u:
                     self.assertIn(u, self.URLS_FONTES, f"guia/{lang}: link fora de fontes/ {u}")
             self.assertGreaterEqual(m.group(1).count("20/11/2026") + m.group(1).count("Nov 20, 2026"), 12)
         self.assertEqual(hrefs[""], hrefs["en/"])

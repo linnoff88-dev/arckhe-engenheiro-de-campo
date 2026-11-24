@@ -1,6 +1,6 @@
 # CLAUDE.md — engenheiro-de-campo
 
-Kit + guia do INEMA.CLUB sobre a profissão **engenheiro de campo de IA** (forward deployed engineer). Conteúdo aberto e gratuito.
+Kit + guia do ARCKHÉ AI sobre a profissão **engenheiro de campo de IA** (forward deployed engineer). Conteúdo aberto e gratuito.
 
 ## Regras do projeto
 
@@ -9,8 +9,8 @@ Kit + guia do INEMA.CLUB sobre a profissão **engenheiro de campo de IA** (forwa
 - Sem crédito de terceiros: o kit não cita autores, canais ou comunidades.
 - `kit/1-teste-metade/perguntas.json` é a fonte única: mudou, rode `gerar_pagina.py` (o teste confere).
 - As notas do eval citadas no guia e no README (18/30, 30/30, 4/10) estão presas em `tests/test_kit.py`: mudou a automação ou os casos, atualize os três lugares.
-- Guia: PT é a fonte; EN/ES são cópias traduzidas pelo `inema-traduz`. Nada técnico no guia; comandos ficam no README.
-- Autor dos commits: `inematds <inematds@gmail.com>`.
+- Guia: PT é a fonte; EN/ES são cópias traduzidas pelo `ARCKHÉ-traduz`. Nada técnico no guia; comandos ficam no README.
+- Autor dos commits: `linnoff88-dev <linnoff88-dev@gmail.com>`.
 
 ## Testes
 

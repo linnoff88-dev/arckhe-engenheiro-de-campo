@@ -1,4 +1,4 @@
-# Chamada (bloco CHAMADA, regra D20/D28 do INEMA)
+# Chamada (bloco CHAMADA, regra D20/D28 do ARCKHÉ)
 
 | Campo | Valor |
 |---|---|
