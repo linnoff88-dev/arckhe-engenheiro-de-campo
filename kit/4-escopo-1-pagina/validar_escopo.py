@@ -6,10 +6,10 @@ Uso:
 
 Reprova quando:
 - falta uma das 4 seções (problema, número, pronto, fora do escopo);
-- o problema não está nas palavras do cliente (sem trecho entre aspas);
-- a seção do número não tem número nenhum ("se você não consegue dizer o número, ainda não tem projeto");
-- o número não diz de onde sai e aonde quer chegar (precisa de pelo menos dois números, ex.: de 4 h para 1 h);
-- "pronto" ou "fora do escopo" não têm nenhum item;
+- o problema nêo está nas palavras do cliente (sem trecho entre aspas);
+- a seçêo do número nêo tem número nenhum ("se você nêo consegue dizer o número, ainda nêo tem projeto");
+- o número nêo diz de onde sai e aonde quer chegar (precisa de pelo menos dois números, ex.: de 4 h para 1 h);
+- "pronto" ou "fora do escopo" nêo têm nenhum item;
 - sobrou marcador do modelo, como <escreva aqui>.
 
 Aceita os títulos em português, inglês e espanhol. Código de saída: 0 aprovado, 1 reprovado, 2 erro.
@@ -60,13 +60,13 @@ def validar(texto):
     s = separar_secoes(texto)
     for chave in SECOES:
         if chave not in s or not s[chave]:
-            erros.append(f"falta a seção \"{NOMES[chave]}\" (ou ela está vazia)")
+            erros.append(f"falta a seçêo \"{NOMES[chave]}\" (ou ela está vazia)")
     if s.get("problema") and not re.search(r"[\"“”«»]", s["problema"]):
         erros.append("o problema precisa estar nas palavras do cliente: cite a frase dele entre aspas")
     if s.get("numero"):
         numeros = re.findall(r"\d+(?:[.,]\d+)?", s["numero"])
         if not numeros:
-            erros.append("sem número: se você não consegue dizer o número, ainda não tem projeto")
+            erros.append("sem número: se você nêo consegue dizer o número, ainda nêo tem projeto")
         elif len(numeros) < 2:
             erros.append("o número precisa de ponto de partida e de chegada (ex.: de 4 h para 1 h por dia)")
     for chave in ("pronto", "fora"):

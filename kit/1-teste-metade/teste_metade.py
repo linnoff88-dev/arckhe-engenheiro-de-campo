@@ -6,10 +6,10 @@ Uso:
   python3 kit/1-teste-metade/teste_metade.py --respostas 3,2,1,0,2,3,1,1,2,0,1,2
   python3 kit/1-teste-metade/teste_metade.py --respostas ... --json
 
-Cada resposta é o NÚMERO DA OPÇÃO como aparece na tela (0 a 3), na ordem das perguntas.
-A ordem das opções é misturada de propósito: a melhor não fica sempre no mesmo lugar
-nem é sempre a mais longa. Os pontos de cada opção estão em perguntas.json (campo "pontos").
-Só biblioteca padrão do Python. Nada sai da sua máquina.
+Cada resposta é o NÚMERO DA OPÇêO como aparece na tela (0 a 3), na ordem das perguntas.
+A ordem das opções é misturada de propósito: a melhor nêo fica sempre no mesmo lugar
+nem é sempre a mais longa. Os pontos de cada opçêo estêo em perguntas.json (campo "pontos").
+Só biblioteca padrêo do Python. Nada sai da sua máquina.
 """
 import argparse
 import json
@@ -26,7 +26,7 @@ def carregar(caminho=PERGUNTAS):
 
 
 def pontuar(dados, respostas):
-    """respostas: lista com o número da opção escolhida (0..3, como aparece), na ordem das perguntas.
+    """respostas: lista com o número da opçêo escolhida (0..3, como aparece), na ordem das perguntas.
     Devolve dict com pontos por metade, a metade mais fraca (ou 'empate') e o plano."""
     perguntas = dados["perguntas"]
     if len(respostas) != len(perguntas):
@@ -80,7 +80,7 @@ def mostrar(dados, res):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Qual metade você tem: construtor ou confiança do cliente")
-    ap.add_argument("--respostas", help="número da opção escolhida em cada pergunta, ex.: 3,2,1,0,2,3,1,1,2,0,1,2")
+    ap.add_argument("--respostas", help="número da opçêo escolhida em cada pergunta, ex.: 3,2,1,0,2,3,1,1,2,0,1,2")
     ap.add_argument("--json", action="store_true", help="saída em JSON")
     a = ap.parse_args(argv)
     dados = carregar()

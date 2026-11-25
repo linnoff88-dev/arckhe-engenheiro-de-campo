@@ -1,6 +1,6 @@
 """Testes do kit engenheiro-de-campo. Rodar da raiz do repo:
     python3 -m unittest discover -s tests -v
-Só biblioteca padrão.
+Só biblioteca padrêo.
 """
 import importlib.util
 import io
@@ -36,7 +36,7 @@ class TesteMetade(unittest.TestCase):
         self.ordem = [p["metade"] for p in self.dados["perguntas"]]
 
     def indice(self, pergunta, pontos):
-        """número da opção (como aparece) que vale esses pontos"""
+        """número da opçêo (como aparece) que vale esses pontos"""
         return [o["pontos"] for o in pergunta["opcoes"]].index(pontos)
 
     def respostas(self, construtor, confianca):
@@ -94,9 +94,9 @@ class TesteMetade(unittest.TestCase):
             self.assertLessEqual(max(tam) / min(tam), 1.7, f"{p['id']}: opções com tamanhos muito diferentes")
         posicoes = [[o["pontos"] for o in p["opcoes"]].index(3) for p in perg]
         for k in range(4):
-            self.assertGreaterEqual(posicoes.count(k), 2, f"a melhor opção cai na posição {k} poucas vezes")
+            self.assertGreaterEqual(posicoes.count(k), 2, f"a melhor opçêo cai na posiçêo {k} poucas vezes")
         longa = sum(max(p["opcoes"], key=lambda o: len(o["texto"]))["pontos"] == 3 for p in perg)
-        self.assertLessEqual(longa, 4, "a melhor opção é a mais longa em muitas perguntas")
+        self.assertLessEqual(longa, 4, "a melhor opçêo é a mais longa em muitas perguntas")
 
     def test_pagina_embaralha_as_opcoes(self):
         modelo = (KIT / "1-teste-metade" / "pagina-modelo.html").read_text(encoding="utf-8")
@@ -135,7 +135,7 @@ class Escopo(unittest.TestCase):
         self.assertTrue(ve.validar((self.PASTA / "modelo.md").read_text(encoding="utf-8")))
 
     def base(self, numero="De 4 horas por dia para 1 hora por dia."):
-        return ("## Problema (nas palavras do cliente)\n\"Perco a manhã separando e-mail.\"\n\n"
+        return ("## Problema (nas palavras do cliente)\n\"Perco a manhê separando e-mail.\"\n\n"
                 f"## O número\n{numero}\n\n## Pronto quando\n- acerta 27 de 30 casos\n\n"
                 "## Fora do escopo\n- WhatsApp\n")
 
@@ -151,7 +151,7 @@ class Escopo(unittest.TestCase):
         self.assertEqual(ve.validar(self.base()), [])
 
     def test_sem_aspas_reprova(self):
-        erros = ve.validar(self.base().replace('"Perco a manhã separando e-mail."', "Perde tempo."))
+        erros = ve.validar(self.base().replace('"Perco a manhê separando e-mail."', "Perde tempo."))
         self.assertTrue(any("aspas" in e for e in erros), erros)
 
     def test_falta_secao(self):
@@ -270,7 +270,7 @@ class SemNumerosProibidos(unittest.TestCase):
         for p in RAIZ.rglob("*"):
             if p.suffix in {".md", ".html"} and ".git" not in p.parts and "tests" not in p.parts:
                 txt = p.read_text(encoding="utf-8", errors="ignore")
-                # CSS/JS e atributos style têm % de layout, não dado
+                # CSS/JS e atributos style têm % de layout, nêo dado
                 txt = re.sub(r"<style.*?</style>|<script.*?</script>|style=\"[^\"]*\"", "", txt, flags=re.S)
                 yield p, txt
 
@@ -293,7 +293,7 @@ class SemNumerosProibidos(unittest.TestCase):
         for lang in ("", "en/", "es/"):
             html = (RAIZ / "guia" / lang / "index.html").read_text(encoding="utf-8")
             m = re.search(r'<section id="mercado">(.*?)</section>', html, re.S)
-            self.assertIsNotNone(m, f"guia/{lang}: sem a seção #mercado")
+            self.assertIsNotNone(m, f"guia/{lang}: sem a seçêo #mercado")
             links = set(re.findall(r'href="(https?://[^"]+)"', m.group(1)))
             hrefs[lang] = links
             for u in links:

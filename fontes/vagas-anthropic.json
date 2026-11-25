@@ -1,7 +1,7 @@
 {
   "data_conferencia": "2026-11-20",
   "conferido": true,
-  "nota": "Só os trechos sem número são usados no guia (política de números do kit).",
+  "nota": "Só os trechos sem número sêo usados no guia (política de números do kit).",
   "vagas": [
     {
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391021008",
@@ -13,7 +13,7 @@
         "Strong communication skills to conduct discovery with customers and to convey technical concepts to diverse stakeholders while maintaining a low ego and collaborative approach.",
         "Strong programming skills with proficiency in Python (and ideally in one or more additional languages like TypeScript, Java, etc) and experience shipping production applications"
       ],
-      "observacao_sem_numero": "A vaga também pede viagem frequente ao cliente e anos de experiência em função técnica com cliente; os números foram omitidos pela política do kit."
+      "observacao_sem_numero": "A vaga também pede viagem frequente ao cliente e anos de experiência em funçêo técnica com cliente; os números foram omitidos pela política do kit."
     },
     {
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5449229008",

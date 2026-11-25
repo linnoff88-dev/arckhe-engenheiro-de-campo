@@ -37,7 +37,7 @@ button{background:var(--amb);color:#111;border:0;border-radius:10px;padding:12px
 </main>
 <script>
 const DADOS = /*PERGUNTAS*/null;
-// a ordem das opções muda a cada vez que a página abre: a melhor não fica sempre no mesmo lugar
+// a ordem das opções muda a cada vez que a página abre: a melhor nêo fica sempre no mesmo lugar
 function embaralhar(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 const f = document.getElementById('f');
 DADOS.perguntas.forEach((p, i) => {
@@ -64,7 +64,7 @@ document.getElementById('ver').onclick = () => {
     '<div><b>' + DADOS.metades[m].split(':')[0] + '</b>: ' + r.pontos[m] + '/' + r.maximo[m] +
     '<div class="bar"><i style="width:' + (100 * r.pontos[m] / r.maximo[m]) + '%"></i></div></div>').join('') +
     '<h2>' + r.plano.titulo + '</h2><p>' + r.plano.foco + '</p><ol>' + r.plano.passos.map(s => '<li>' + s + '</li>').join('') + '</ol>' +
-    '<p>Os passos estão no kit: <a href="https://github.com/linnoff88-dev/engenheiro-de-campo">github.com/linnoff88-dev/engenheiro-de-campo</a></p>';
+    '<p>Os passos estêo no kit: <a href="https://github.com/linnoff88-dev/engenheiro-de-campo">github.com/linnoff88-dev/engenheiro-de-campo</a></p>';
   out.style.display = 'block'; out.scrollIntoView({behavior: 'smooth'});
 };
 </script>

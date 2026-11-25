@@ -1,9 +1,9 @@
-"""Automação de exemplo, VERSÃO 1: triagem de e-mails por palavra-chave.
+"""Automaçêo de exemplo, VERSêO 1: triagem de e-mails por palavra-chave.
 
 É o tipo de coisa que "funciona na demo": os 5 exemplos óbvios passam.
 O eval mostra onde ela quebra. Regra simples, sem IA, para rodar sem API.
 
-Contrato (igual em toda automação que o runner aceita):
+Contrato (igual em toda automaçêo que o runner aceita):
     classificar(texto: str) -> str   # uma das categorias de casos.json
 """
 

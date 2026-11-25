@@ -14,9 +14,9 @@ O que está por trás (o que você descobriu): <1 a 3 linhas>
 
 ## Pronto quando
 
-- <condição verificável 1>
-- <condição verificável 2>
+- <condiçêo verificável 1>
+- <condiçêo verificável 2>
 
 ## Fora do escopo
 
-- <o que NÃO entra agora, mesmo que o cliente peça>
+- <o que NêO entra agora, mesmo que o cliente peça>

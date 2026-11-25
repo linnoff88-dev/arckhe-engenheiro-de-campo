@@ -1,6 +1,6 @@
 {
   "versao": 2,
-  "escala": "cada opção vale de 0 a 3 pontos (o campo pontos); a ordem das opções é misturada de propósito; cada metade tem 6 perguntas (0 a 18)",
+  "escala": "cada opçêo vale de 0 a 3 pontos (o campo pontos); a ordem das opções é misturada de propósito; cada metade tem 6 perguntas (0 a 18)",
   "empate_ate": 1,
   "metades": {
     "construtor": "Construtor: faz a coisa funcionar e prova que funciona",
@@ -17,7 +17,7 @@
           "pontos": 2
         },
         {
-          "texto": "deixei a tarefa como estava, feita à mão",
+          "texto": "deixei a tarefa como estava, feita à mêo",
           "pontos": 0
         },
         {
@@ -36,7 +36,7 @@
       "texto": "Ligar dois sistemas por API (ex.: planilha → sistema de vendas):",
       "opcoes": [
         {
-          "texto": "já vi alguém fazendo, mas não fiz",
+          "texto": "já vi alguém fazendo, mas nêo fiz",
           "pontos": 1
         },
         {
@@ -71,7 +71,7 @@
           "pontos": 1
         },
         {
-          "texto": "ainda não sei bem o que é isso",
+          "texto": "ainda nêo sei bem o que é isso",
           "pontos": 0
         }
       ]
@@ -79,7 +79,7 @@
     {
       "id": "c4",
       "metade": "construtor",
-      "texto": "Para mostrar que uma automação funciona, eu…",
+      "texto": "Para mostrar que uma automaçêo funciona, eu…",
       "opcoes": [
         {
           "texto": "rodo um eval que dá nota às versões",
@@ -90,7 +90,7 @@
           "pontos": 2
         },
         {
-          "texto": "testo alguns exemplos na mão antes de mostrar",
+          "texto": "testo alguns exemplos na mêo antes de mostrar",
           "pontos": 1
         },
         {
@@ -117,7 +117,7 @@
           "pontos": 1
         },
         {
-          "texto": "não consegui achar onde estava o erro",
+          "texto": "nêo consegui achar onde estava o erro",
           "pontos": 0
         }
       ]
@@ -128,7 +128,7 @@
       "texto": "Dados bagunçados (datas e nomes em formatos misturados):",
       "opcoes": [
         {
-          "texto": "arrumo à mão, linha por linha",
+          "texto": "arrumo à mêo, linha por linha",
           "pontos": 1
         },
         {
@@ -174,7 +174,7 @@
       "texto": "Na última vez que escrevi o escopo de um projeto…",
       "opcoes": [
         {
-          "texto": "não escrevi, fomos combinando na conversa",
+          "texto": "nêo escrevi, fomos combinando na conversa",
           "pontos": 0
         },
         {
@@ -232,7 +232,7 @@
           "pontos": 2
         },
         {
-          "texto": "aceito tudo para não criar problema",
+          "texto": "aceito tudo para nêo criar problema",
           "pontos": 0
         }
       ]
@@ -274,7 +274,7 @@
           "pontos": 2
         },
         {
-          "texto": "espero a irritação passar e sigo o trabalho",
+          "texto": "espero a irritaçêo passar e sigo o trabalho",
           "pontos": 1
         },
         {
@@ -290,8 +290,8 @@
       "foco": "Você conversa bem; falta fazer funcionar e provar.",
       "passos": [
         "Trilha itens 1 a 4: Python com a IA escrevendo, APIs, agentes e EVALS (o principal).",
-        "Rode o eval do kit (passo 5), quebre a automação de propósito e veja a nota cair.",
-        "Troque a automação do eval por uma sua e chegue a uma nota que você defende.",
+        "Rode o eval do kit (passo 5), quebre a automaçêo de propósito e veja a nota cair.",
+        "Troque a automaçêo do eval por uma sua e chegue a uma nota que você defende.",
         "Só depois faça o projeto-prova (passo 6) com um cliente real."
       ]
     },
@@ -299,14 +299,14 @@
       "titulo": "Sua metade mais fraca é a da CONFIANÇA DO CLIENTE",
       "foco": "Você constrói; falta descobrir o problema certo e fazer o time usar.",
       "passos": [
-        "Trilha itens 5 a 8: descoberta, escopo, demo para executivo e gestão de mudança.",
+        "Trilha itens 5 a 8: descoberta, escopo, demo para executivo e gestêo de mudança.",
         "Faça 3 sessões com o cliente simulado (passo 3), em setores diferentes, e anote a nota de cada uma.",
-        "Depois de cada sessão, escreva o escopo de 1 página (passo 4) e passe no validador.",
+        "Depois de cada sessêo, escreva o escopo de 1 página (passo 4) e passe no validador.",
         "Treine a demo de 5 minutos para executivo com o roteiro da entrevista (passo 8)."
       ]
     },
     "empate": {
-      "titulo": "Suas duas metades estão no mesmo nível",
+      "titulo": "Suas duas metades estêo no mesmo nível",
       "foco": "O que falta é rodar o ciclo inteiro com um cliente de verdade.",
       "passos": [
         "Vá direto ao projeto-prova (passo 6): descoberta, escopo, construir, eval, demo e medir.",

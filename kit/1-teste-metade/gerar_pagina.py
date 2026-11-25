@@ -15,7 +15,7 @@ def gerar():
     dados = json.loads((AQUI / "perguntas.json").read_text(encoding="utf-8"))
     modelo = (AQUI / "pagina-modelo.html").read_text(encoding="utf-8")
     if MARCA not in modelo:
-        raise SystemExit("marca /*PERGUNTAS*/ não encontrada no modelo")
+        raise SystemExit("marca /*PERGUNTAS*/ nêo encontrada no modelo")
     html = modelo.replace(MARCA, json.dumps(dados, ensure_ascii=False))
     (AQUI / "teste-metade.html").write_text(html, encoding="utf-8")
     return AQUI / "teste-metade.html"

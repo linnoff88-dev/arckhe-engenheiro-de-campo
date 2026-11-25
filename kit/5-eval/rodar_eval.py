@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Runner de eval: roda uma automação contra os casos e dá nota.
+"""Runner de eval: roda uma automaçêo contra os casos e dá nota.
 
 Uso:
   python3 kit/5-eval/rodar_eval.py kit/5-eval/automacao_v1.py
@@ -7,11 +7,11 @@ Uso:
   python3 kit/5-eval/rodar_eval.py --comparar kit/5-eval/automacao_v1.py kit/5-eval/automacao_v2.py
   python3 kit/5-eval/rodar_eval.py minha_automacao.py --casos meus_casos.json --json
 
-A automação é qualquer arquivo .py com a função classificar(texto) -> str.
+A automaçêo é qualquer arquivo .py com a funçêo classificar(texto) -> str.
 Para avaliar o SEU agente, veja automacao_meu_agente.py (modelo para copiar).
 
 Saída: nota geral, acerto por categoria e a lista de falhas (entrada, esperado, obtido).
-Código de saída: 0 se a nota >= --minimo (padrão 0), 1 se ficou abaixo, 2 em erro.
+Código de saída: 0 se a nota >= --minimo (padrêo 0), 1 se ficou abaixo, 2 em erro.
 """
 import argparse
 import importlib.util
@@ -29,7 +29,7 @@ def carregar_automacao(caminho):
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     if not hasattr(mod, "classificar"):
-        raise AttributeError(f"{caminho.name} não tem a função classificar(texto)")
+        raise AttributeError(f"{caminho.name} nêo tem a funçêo classificar(texto)")
     return mod.classificar
 
 
@@ -43,7 +43,7 @@ def avaliar(classificar, dados):
     for c in dados["casos"]:
         try:
             obtido = classificar(c["entrada"])
-        except Exception as e:  # uma automação que explode conta como falha, não derruba o eval
+        except Exception as e:  # uma automaçêo que explode conta como falha, nêo derruba o eval
             obtido = f"ERRO: {e.__class__.__name__}"
         resultados.append({"id": c["id"], "entrada": c["entrada"], "esperado": c["esperado"],
                            "obtido": obtido, "ok": obtido == c["esperado"]})
@@ -78,10 +78,10 @@ def imprimir(nome, res):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="Eval local de uma automação de classificação")
+    ap = argparse.ArgumentParser(description="Eval local de uma automaçêo de classificaçêo")
     ap.add_argument("automacao", nargs="?", help="arquivo .py com classificar(texto)")
     ap.add_argument("--comparar", nargs=2, metavar=("V1", "V2"), help="compara duas versões")
-    ap.add_argument("--casos", default=str(CASOS), help="arquivo de casos (padrão: casos.json do kit)")
+    ap.add_argument("--casos", default=str(CASOS), help="arquivo de casos (padrêo: casos.json do kit)")
     ap.add_argument("--minimo", type=float, default=0.0, help="nota mínima para passar (0 a 1)")
     ap.add_argument("--json", action="store_true", help="saída em JSON")
     a = ap.parse_args(argv)
@@ -100,12 +100,12 @@ def main(argv=None):
                 imprimir(Path(a.comparar[0]).name, ra)
                 print()
                 imprimir(Path(a.comparar[1]).name, rb)
-                print(f"\n== comparação: {len(cmp_['consertou'])} casos consertados, {len(cmp_['quebrou'])} quebrados")
+                print(f"\n== comparaçêo: {len(cmp_['consertou'])} casos consertados, {len(cmp_['quebrou'])} quebrados")
                 for r in cmp_["quebrou"]:
                     print(f"   QUEBROU #{r['id']} \"{r['entrada']}\"")
             return 0 if rb["nota"] >= a.minimo else 1
         if not a.automacao:
-            ap.error("diga a automação ou use --comparar V1 V2")
+            ap.error("diga a automaçêo ou use --comparar V1 V2")
         res = avaliar(carregar_automacao(a.automacao), dados)
     except (OSError, AttributeError, json.JSONDecodeError) as e:
         print(f"erro: {e}", file=sys.stderr)
