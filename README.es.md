@@ -1,6 +1,6 @@
 # Ingeniero de campo de IA: la nueva profesión y el kit para prepararte
 
-[![Ingeniero de campo: la nueva profesión de la IA](guia/assets/banner-es.jpg)](https://inematds.github.io/engenheiro-de-campo/guia/es/)
+[![Ingeniero de campo: la nueva profesión de la IA](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,16 +10,16 @@
 
 ## 📖 Guía de uso
 
-Guía completa (qué es, su potencial, formación paso a paso): **https://inematds.github.io/engenheiro-de-campo/guia/es/**
+Guía completa (qué es, su potencial, formación paso a paso): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
-Prueba en el navegador, 3 minutos: **https://inematds.github.io/engenheiro-de-campo/kit/1-teste-metade/teste-metade.html** (en portugués)
+Prueba en el navegador, 3 minutos: **https://linnoff88-dev.github.io/arckhe-/kit/1-teste-metade/teste-metade.html** (en portugués)
 
 ## Empieza pidiéndoselo a tu IA
 
 Abre Claude Code o Codex en una carpeta nueva y pega:
 
 ```
-Lee el kit "ingeniero de campo de IA" en https://github.com/inematds/engenheiro-de-campo (el README lo explica todo).
+Lee el kit "ingeniero de campo de IA" en https://github.com/linnoff88-dev/engenheiro-de-campo (el README lo explica todo).
 Después ayúdame a prepararme para esta profesión, en español sencillo:
 1. Haz conmigo la prueba "qué mitad tienes", una pregunta a la vez, y dime el resultado.
 2. Prepara un plan de 4 semanas centrado en mi mitad más débil, usando los pasos del kit.
@@ -67,7 +67,7 @@ Quién lo hace: 🧠 sesión (tú, con la IA a tu lado) · ⚙️ script del kit
 - Git, para descargar el kit. No se necesita ninguna clave de API ni ningún modelo local.
 
 ```bash
-git clone https://github.com/inematds/engenheiro-de-campo.git
+git clone https://github.com/linnoff88-dev/engenheiro-de-campo.git
 cd engenheiro-de-campo
 ```
 
@@ -129,4 +129,4 @@ python3 -m unittest discover -s tests -v
 
 ## Licencia
 
-MIT. Contenido abierto y gratuito de [INEMA.CLUB](https://inema.club).
+MIT. Contenido abierto y gratuito de [ARCKHÉ AI](https://ARCKHÉ AI).
